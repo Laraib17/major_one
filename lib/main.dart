@@ -43,7 +43,16 @@ class _MyHomePageState extends State<MyHomePage> {
             GestureDetector(
               child: SingleChildScrollView(
                 child: Column(
-                  
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        color: const Color.fromARGB(255, 143, 210, 249),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: 
+                      ,
+                    )
+                  ],
                 ),
               ),
             )
