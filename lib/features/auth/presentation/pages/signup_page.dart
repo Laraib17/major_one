@@ -15,26 +15,48 @@ class _Signup_pageState extends State<Signup_page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppPallete.gradient1,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(child: Lottie.asset('assets/animation/first.json',height: 150,width: 150)),
-          Text(
-            "Sign Up",
-            style: GoogleFonts.barriecito(
-              textStyle: Theme.of(context).textTheme.displayLarge,
-              fontSize: 48,
-              fontWeight: FontWeight.w700,
-            ),
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment(0.8, 1),
+            colors: <Color>[
+              Color(0xff1f005c),
+              Color(0xff5b0060),
+              Color(0xff870160),
+              Color(0xffac255e),
+              Color(0xffca485c),
+              Color(0xffe16b5c),
+              Color(0xfff39060),
+              Color(0xffffb56b),
+            ], 
+            tileMode: TileMode.mirror,
           ),
-          const SizedBox(height: 40),
-          AuthField(hintText: "Name"),
-          const SizedBox(height: 20),
-          AuthField(hintText: "E-mail"),
-          const SizedBox(height: 20),
-          AuthField(hintText: "Password"),
-        ],
+        ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(child: Lottie.asset('assets/animation/first.json',height: 150,width: 150)),
+              Text(
+                "Sign Up",
+                style: GoogleFonts.barriecito(
+                  textStyle: Theme.of(context).textTheme.displayLarge,
+                  fontSize: 48,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 40),
+              AuthField(hintText: "Name"),
+              const SizedBox(height: 20),
+              AuthField(hintText: "E-mail"),
+              const SizedBox(height: 20),
+              AuthField(hintText: "Password"),
+              const SizedBox(height: 80),
+              ElevatedButton(onPressed: (){}, child: Text('bag packed'))
+            ],
+          ),
+        ),
       ),
     );
   }

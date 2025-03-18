@@ -46,7 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                         color: const Color.fromARGB(255, 143, 210, 249),
                         borderRadius: BorderRadius.circular(10),
-                        
                       ),
                     )
                   ],
