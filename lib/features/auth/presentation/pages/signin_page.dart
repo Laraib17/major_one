@@ -11,16 +11,8 @@ class Signin_Page extends StatelessWidget {
         title: Text('Sign In'),
       ),
       body:Column(
-        children:[
-          Container(
-            decoration:BoxDecoration(
-              
-            ),
-            child:Text("Sign In")
-            )
-        ]
-          )
-      );
+        children: [],
+      )
     );
   }
 }
